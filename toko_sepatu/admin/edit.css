@@ -1,0 +1,88 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9ecef; /* Light gray background */
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  color: #343a40; /* Dark gray for the heading */
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #495057; /* Medium gray for labels */
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Bright blue */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px);
+}
+
+.btn-info {
+  background-color: #17a2b8; /* Teal */
+  color: white;
+}
+
+.btn-info:hover {
+  background-color: #138496; /* Darker teal on hover */
+  transform: translateY(-2px);
+}
+
+.btn-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-info a:hover {
+  text-decoration: underline;
+}

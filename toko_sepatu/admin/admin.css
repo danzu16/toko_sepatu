@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #5c695d;
+  color: #333;
+}
+
+.container {
+  margin: 20px auto;
+  width: 90%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* Buttons */
+.tombol {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tombol button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.tombol button.logout {
+  background-color: #e74c3c;
+}
+
+.tombol button:hover {
+  background-color: #333;
+}
+
+.tombol a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+img {
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons in Table */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px; /* Disamakan ukuran */
+  margin: 4px;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 80px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.btn-info {
+  background-color: #3498db;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+}
+
+.btn-info:hover, .btn-danger:hover {
+  background-color: #333;
+}
+
+/* Popup Form */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.popup form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.simpan input.submit, .simpan input.batal {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.simpan input.batal {
+  background-color: #e74c3c;
+}
+
+.simpan input:hover {
+  background-color: #333;
+}
+
+.close {
+  text-decoration: none;
+  font-size: 24px;
+  color: #333;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: red;
+}
+
+.popup:target {
+  display: block;
+}
